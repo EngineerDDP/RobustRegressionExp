@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RobustRegressionExp", "RobustRegressionExp\RobustRegressionExp.pyproj", "{0A796C73-256C-4123-B1E4-CA1CC32D2948}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A796C73-256C-4123-B1E4-CA1CC32D2948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A796C73-256C-4123-B1E4-CA1CC32D2948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3BCFD42-3C90-4515-87C5-596D6D6D7380}
+	EndGlobalSection
+EndGlobal
