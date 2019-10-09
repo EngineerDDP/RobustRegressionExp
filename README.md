@@ -76,7 +76,7 @@ array([42.94969124, 72.9259261 , 12.96497754,  1.16109273, 70.03028099,
 >>> plt.plot(x, y, 'g.')
 >>> plt.plot(x, y_1, 'r.')
 ```
-结果如下：
+结果如下：<br>
 ![效果图](https://github.com/EngineerDDP/RobustRegressionExp/blob/master/RobustRegressionExp/Figure_1.png)
 ```
   class LinearSimulation
@@ -93,7 +93,7 @@ array([42.94969124, 72.9259261 , 12.96497754,  1.16109273, 70.03028099,
 >>> plt.plot(x, y_n, 'r.')
 >>> plt.plot(x, y_b, 'g-')
 ```
-结果如下：
+结果如下：<br>
 ![效果图](https://github.com/EngineerDDP/RobustRegressionExp/blob/master/RobustRegressionExp/Figure_2.png)
 ```
   class SinSimulation
@@ -110,7 +110,7 @@ array([42.94969124, 72.9259261 , 12.96497754,  1.16109273, 70.03028099,
 >>> plt.plot(x, y_n, 'r.')
 >>> plt.plot(x, y_b, 'g-')
 ```
-结果如下：
+结果如下：<br>
 ![效果图](https://github.com/EngineerDDP/RobustRegressionExp/blob/master/RobustRegressionExp/Figure_3.png)
 ### 框架构件 *robustReg.py*
 * *class RobustLinearRegressionCPU* 整合式的线性鲁棒回归（Robust Regression）模型，基于梯度下降算法，使用纯CPU计算。
