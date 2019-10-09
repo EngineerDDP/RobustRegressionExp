@@ -143,8 +143,8 @@ class FCLayer:
         y = np.multiply(act_grad, gradient)
 
         # adjust weight
-        batch_weight = [y[:, i].dot(x[:, i].T) for i in range(x.shape[1])]
-        self.W = self.W - np.mean(batch_weight, axis=0)
+        batch_weight = y.dot(x.T) / y.shape[1]
+        self.W = self.W - batch_weight
         # adjust bias
         self.B = self.B - y.mean(axis=1)
         # recalculate gradient to propagate
@@ -301,7 +301,7 @@ class Model:
                 if self.Debug and i % 10 == 0:
                     print('epochs: {}, batches: {}, loss: {:.4f}'.format(j, i, loss))
             
-            if np.abs(loss - preloss) < minideltaloss:
+            if minideltaloss is not None and np.abs(loss - preloss) < minideltaloss:
                 break
             else:
                 preloss = loss

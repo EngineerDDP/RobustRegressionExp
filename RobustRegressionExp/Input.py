@@ -276,3 +276,8 @@ def splitdata(data, input_length, output_length=1, stride=1):
         y.append(data[k + input_length:k + input_length + output_length])
         x.append(data[k:k + input_length])
     return x,y
+
+if __name__ == '__main__':
+    import matplotlib.pyplot as plt
+
+    print('good')
