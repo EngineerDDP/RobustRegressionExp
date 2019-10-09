@@ -147,3 +147,22 @@ array([42.94969124, 72.9259261 , 12.96497754,  1.16109273, 70.03028099,
 |*TanhLoss*|双曲正切损失|
 
 * 模型框架*Model*，用于调用其他模块进行训练。
+
+## 样例
+```
+>>> sim = LinearSimulation(b=1.0,w=0.4,normal_scale=0.3,bin_scale=10,oneside=True,bin_rate=0.3)
+>>> x = np.linspace(0, 10, 100)
+>>> y = sim.predict(x)
+>>> x = x.reshape([-1, 1])
+>>> y = y.reshape([-1, 1])
+```
+```
+>>> nn = []
+>>> nn.append(FCLayer(units=1, act=Linear()))
+>>> nn.append(FCLayer(units=1, act=Sigmoid()))
+>>> loss = MseLoss()
+>>> op = GradientDecentOptimizer(loss=loss, layers=nn, learnrate=0.1)
+>>> model = Model(nn, op, onehot=False, debug=True)
+>>> model.fit(x, y, epochs=20, batch_size=50, minideltaloss=None)
+>>> model.predict(x)
+```
